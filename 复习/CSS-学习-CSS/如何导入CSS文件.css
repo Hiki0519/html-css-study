@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600; 
+    /* font-weight: 粗细-范围（100-700）; */
+    color: rgb(106, 158, 255);
+}
+
+ul {
+    color: brown;
+    font-size: 20px;
+}

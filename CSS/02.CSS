@@ -1,0 +1,14 @@
+h1{
+    color: red;
+}
+
+p{
+    font-size: 1em;
+    font-weight: 600;
+    /* font-weight 的范围是100到700 粗细的意思; */
+}
+
+ul{
+    color: rgb(235, 76, 84);
+    font-size: 1em;
+}

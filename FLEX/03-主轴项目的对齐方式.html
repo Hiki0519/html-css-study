@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主轴项目的对齐方式</title>
+</head>
+
+<style>
+    /* 容器宽度 */
+    .container {
+        width: 300px;
+        height: 200px;
+
+        display: flex;
+
+        /* 默认：从主轴的起始线开始排列,对齐到起始线 */
+        justify-content: flex-start;
+        /* 对齐到终止线 */
+        justify-content: flex-end;
+        /* 对齐到主轴中间线:居中对齐 */
+        justify-content: center;
+
+        /* 两端对齐:剩余空间在头尾项目之外的项目间平均分配! */
+        /* 把所有剩余空白只放在“项目之间”，两边不留空 */
+        /* 项目之间的间距 = 平均分配剩余空间 */
+        justify-content: space-between;
+
+        /* 分散对齐:剩余空间在每个项目两侧平均分配 */
+        /* 中间缝更大，左右边也有缝但更小 */
+        /* 项目之间的空白 = 两边空白相加 */
+        /* 项目之间的间距 = 边缘间距 × 2 */
+        justify-content: space-around;
+
+        /* 平均对齐:剩余空间在每个项目之间平均分配 */
+        justify-content: space-evenly;
+
+
+    }
+
+
+    .item {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        background-color: lightcyan;
+    }
+</style>
+<body>
+    <!-- .container>.item{$}*4  -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+</body>
+</html>

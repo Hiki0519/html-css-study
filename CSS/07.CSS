@@ -1,0 +1,17 @@
+p{
+  border: 1px solid black;  
+}
+
+p{
+    color: blueviolet;
+
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Brand{
+    font-family: "Poppins";
+    color: brown;
+    font-weight: 500;
+}

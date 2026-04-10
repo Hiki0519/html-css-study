@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

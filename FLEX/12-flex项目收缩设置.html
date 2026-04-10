@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex项目收缩设置</title>
+</head>
+<style>
+    .container {
+        width: 300px;
+        height: 150px;
+        display: flex;
+    }
+
+    .item {
+        width: 50px;
+        height: 50px;
+        background-color: lightcyan;
+        font-size: 1.5rem;
+    }
+
+    /* 三值语法 */
+    .item:first-of-type {
+        background-color: lightgreen;
+        /* 默认值 0代表不放大,1代表放大 */
+        flex: 0 1 auto;
+        flex: 1 1 auto;
+        flex: 0 0 80px;
+        /* 80是第一个项目所占据的主轴空间，会覆盖初始值，上面item的50 */
+        
+    }
+
+    .item:nth-of-type(2) {
+        background-color: yellow;
+
+        /* 双值语法 */
+        flex:0 100px;
+        /* 第一个值是放大因子,0是不放大,100是固定设置100 */
+    }
+    
+
+    .item:last-of-type {
+        background-color: lightblue;
+
+        /* 单值语法,用的最多 */
+        flex: 1;
+        /* 将所有剩余空间分给第三个项目 */
+
+        /* 将当前项目大小重置，恢复初始值 */
+        /* flex: 0 1 auto; */
+        flex: initial;
+
+        /* 想让项目禁止放大缩小，始终保持最初的样子 */
+        flex: 0 0 auto;
+        flex: none;
+        flex: 0 1 250px;
+
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+
+</body>
+</html>

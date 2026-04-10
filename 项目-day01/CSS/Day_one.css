@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   margin: 0; 
+   font-family: Poppins;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.nav {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 20px;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #111;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 10px;
+
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  background: #f3f3f3;
+  color: #000;
+}
+
+.site-header {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    height: 56px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+}
+
+.logo img {
+  height: 32px;   /* 你想要的高度 */
+  width: auto;
+  display: block; /* 去掉图片底部那条“空隙” */
+}
+

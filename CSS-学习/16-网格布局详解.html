@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container>div{
+        border-radius: 5px;
+        /* border-color: black; */
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 156, 86);
+        border: 2px solid black;
+    }
+    
+    .container{
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* repeat里面3代表要创建3个宽度轨道 一行能放多少个网格*/
+
+        grid-template-columns: repeat(3, minmax(100px,300px));
+        /* 网格给了一个最少100像素的长度和最多400像素的长度 */
+        /* 给每一列（或每一行）规定一个“最小值”和“最大值” */
+        /* minmax(a, b) = 至少 a，最多 b，在中间自动伸缩 */
+
+        grid-gap: 10px;   
+        /* grid-gap自动产生间隔 */
+    }
+
+    .d1{
+        grid-column: 1/-1;
+        /* -1就是把一整行占满 */
+
+        text-align:center
+        /* 文字居中 */
+
+        /* place-items: center; 
+        是 Grid 布局里的一句“快捷写法”：让格子里的内容 水平居中 + 垂直居中。 */
+
+        /* display: flex; */
+        /* align-items: center;        */
+         /* 垂直居中 */
+        /* justify-content: center;     */
+        /* 水平居中 */
+
+        
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="d1">文章开头</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+
+</body>
+</html>

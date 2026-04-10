@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建并划分网格容器</title>
+</head>
+<style>
+    .container {
+        /* 设置容器大小 */
+        width: 400px;
+        height: 400px;
+        background-color: wheat;
+
+        /* 声明grid容器 */
+        display: grid;
+
+        /* 设置项目在容器中的排列/填充方式 */
+        /* 默认行优先  */
+        grid-auto-flow: row;
+        /* grid-auto-flow: column; */
+
+        /* 在容器中显示的划分行与列,生成指定数量的单元格来放置项目 */
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px;
+
+        /* 第七个单元格是隐式网格:由容器根据项目数量自动生成 */
+        grid-auto-rows: auto;
+        grid-auto-rows: 150px;
+    }   
+
+    /* 项目样式 */
+    .item {
+        background-color: lightskyblue;
+        font-size: 2rem;
+    }
+</style>
+
+<body>
+    
+    <!-- 创建并划分网格容器 -->
+     <div class="container">
+        <!-- 创建项目    项目必须是容器的子元素-->
+         <!-- span.item.item$*6{$}  {}这个代表内容 $代表序列 -->
+          <span class="item item1">1</span>
+          <span class="item item2">2</span>
+          <span class="item item3">3</span>
+          <span class="item item4">4</span>
+          <span class="item item5">5</span>
+          <span class="item item6">6</span>
+          <span class="item item6">7</span>
+     </div>
+</body>
+</html>

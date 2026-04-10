@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input textarea select对比</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .block {
+            margin-bottom: 24px;
+        }
+
+        label {
+            display: inline-block;
+            width: 90px;
+        }
+
+        textarea {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h1>input、textarea、select 对比</h1>
+
+    <div class="block">
+        <h2>1. input</h2>
+        <p>适合输入短内容，一般是一行，比如姓名、电话、邮箱。</p>
+        <label for="username">用户名：</label>
+        <input type="text" id="username" placeholder="请输入用户名">
+    </div>
+
+    <div class="block">
+        <h2>2. textarea</h2>
+        <p>适合输入长内容，可以换行，比如留言、备注、自我介绍。</p>
+        <label for="message">留言：</label>
+        <textarea id="message" rows="5" cols="30" placeholder="请输入你的留言"></textarea>
+    </div>
+
+    <div class="block">
+        <h2>3. select</h2>
+        <p>适合从固定选项里选择一个内容，比如城市、学历、年级。</p>
+        <label for="city">城市：</label>
+        <select id="city">
+            <option>北京</option>
+            <option>上海</option>
+            <option>广州</option>
+            <option>深圳</option>
+        </select>
+    </div>
+</body>
+</html>

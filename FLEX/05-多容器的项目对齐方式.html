@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多行容器中,交叉轴项目对齐方式</title>
+</head>
+
+<style>
+    /* 容器宽度 */
+    .container {
+        width: 300px;
+        height: 200px;
+
+        display: flex;
+
+        flex-flow: row wrap;
+
+        /* 项目拉伸占据整个交叉轴 */
+        align-content: stretch;
+        
+        /* 与起始线对齐 */
+        align-content: flex-start;
+
+        /* 与终止线对齐 */
+        align-content: flex-end;
+
+        /* 居中对齐 */
+        align-content: center;
+
+        /* 两端对齐 上下贴紧起始和终止线 */
+        align-content: space-between;
+
+        /* 分散对齐 中间是上下两边的2倍*/
+        align-content: space-around;
+
+        /* 平均对齐 */
+        align-content: space-evenly;
+
+    }
+
+
+    .item {
+        width: 100px;
+        height: 50px;
+        font-size: 1.5rem;
+        background-color: lightcyan;
+    }
+</style>
+<body>
+    <!-- .container>.item{$}*4  -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+    
+</body>
+</html>

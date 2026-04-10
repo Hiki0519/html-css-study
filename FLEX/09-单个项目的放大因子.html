@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单个项目的放大因子</title>
+</head>
+
+<style>
+    .container {
+        width: 300px;
+        height: 200px;
+        display: flex;
+
+    }
+
+     .item {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        background-color: lightcyan;
+    }
+
+    .item:first-of-type {
+        flex-grow: 0;
+        /* 默认数值 */
+    }
+
+    .item:nth-of-type(2) {
+        flex-grow: 0;
+    }
+
+    .item:last-of-type {
+        flex-grow: 0;
+    }
+
+    /* 放大比例计算公式：
+    1.计算出需要分配的主轴上剩余空间: 300 - 50*3 = 150px
+    2.计算放大因子(0 + 1 + 2)=3
+    3.将剩余空间150px分成三等分: 150 / 3 = 50px
+    4.第一个项目： 50px + (0*50)= 50px
+    5.第二个项目： 50px + (1*50)= 100px
+    6.第三个项目： 50px + (2*50)= 150px */
+</style>
+<body>
+    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+
+</body>
+</html>

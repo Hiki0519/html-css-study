@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合检测页</title>
+</head>
+<body>
+    <header>
+        <p>欢迎来到综合检测页</p>
+        <h1>综合检测页</h1>
+        <nav>
+            <a href="#">个人介绍区</a>
+            <a href="#">表格展示区</a>
+            <a href="#">表单反馈区</a>
+        </nav>
+
+        <main>
+            <section>
+                <h2>个人介绍区</h2>
+                <p>
+                    <strong>这是</strong> 
+                    <em><span>我的</span></em>                    
+                    <small><span>个人</span></small>
+                    <mark><span>介绍区</span></mark>
+                </p>
+            </section>
+
+            <section>
+                <h2>表格展示区</h2>
+
+                <table border="1"  width="200" cellspacing="0">
+                <caption>表格</caption>
+
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>身高</th>
+                        <th>体重</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>张三</td>
+                        <td>173</td>
+                        <td>63KG</td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td>李四</td>
+                        <td>175</td>
+                        <td>53KG</td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td>王五</td>
+                        <td>165</td>
+                        <td>63KG</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr colspan="3">这是表格展示部分</tr>
+                </tfoot>
+                </table>
+            </section>
+
+            <section>
+                <h2>表单反馈区</h2> 
+                <br>
+                <form>
+                    <label for="username">用户名：</label>
+                    <input type="username" id="username" name="username" placeholder="用户名输入框">
+                    <!-- placeholder=点了输入内容后会消失 -->
+                    <br>
+                    <label for="email">邮箱：</label>
+                    <input type="email" id="email" name="email" value="das@qq.com">
+                    <!-- value=原本已经输入的内容 -->
+                    <br>
+                    <label for="gender">性别：</label>
+                    <input type="radio" id="男" name="gender" checked>男
+                    <input type="radio" id="女" name="gender">女
+                    <br>
+                    <label for="hobby">爱好：</label>
+                    <input type="checkbox" name="hobby" checked>篮球
+                    <input type="checkbox" name="hobby">排球
+                    <input type="checkbox" name="hobby">足球
+                    <br>
+
+                </form>
+                <hr>
+                
+            </section>
+        </main>
+    </header>
+</body>
+</html>

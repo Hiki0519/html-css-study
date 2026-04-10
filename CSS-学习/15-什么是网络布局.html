@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body {
+  width: 90%;
+  /* 让页面内容区域宽度 = 浏览器窗口的 90%
+（窗口变大，它也跟着变大） */
+  max-width: 900px;
+  /* 在窗口不太宽时：会跟着变大
+  到某个点（窗口宽约 1000px）后：就不再变大了 */
+  margin: 2em auto;
+  font: .9em/1.2 Arial, Helvetica, sans-serif;
+}
+
+.container > div {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: orange;
+  /* 边框背景的颜色 */
+  color: white;
+  /* 字体的颜色 */
+  border: 2px solid black;
+}
+
+.container{
+    display: grid;
+    /* display:grid 就是这个容器变成了网格布局 */
+
+    /* grid-template-columns: 100px 100px 100px; */
+
+   /* 100px是指一行有几个方块的像素,这是grid的列出 
+   比如现在三个值所以三个列 切几列 + 每列多宽 
+   每一行是多少像素*/
+
+   /* grid-template-rows: 50px 50px 50px; */
+   /* 每行多高 每一列是多少像素*/
+
+     grid-template-columns: 1fr 1fr 1fr;
+     /* 写了三个fr代表一行把它的宽度分成了三份 每一个方块对应了一份
+     把容器的可用宽度分成 3 列，每列占 1 份，所以三列等宽。
+     1.fr 分的是“剩余可用宽度”
+     2.它只定义“列宽”，不定义“行高”
+      */
+      }
+      .grid-input{
+        border: none;
+        
+        outline: none;
+        /* 去掉“点击后”的外框（焦点框）
+        你点进 input 时，浏览器通常会给它一个蓝色/黑色的轮廓线，那条线叫 outline。 */
+
+        background: transparent;
+
+        color: white;
+
+        box-sizing: border-box;
+        /* box-sizing:  当我写width / height 的时候，这个宽高到底算到哪里为止？” */
+        因为一个盒子（元素）不是只有“内容”，它还有：
+
+         /* content：内容区（文字/图片放这里）
+
+        padding：内边距（内容和边框之间的空隙）
+
+        border：边框
+
+        margin：外边距（在盒子外面，不算盒子本体） */
+
+        /* box-sizing 只管 content / padding / border 这三层怎么算，不管 margin。 */
+        
+        font: inherit;
+
+      }
+</style>
+
+<body>
+<div class="container">
+  <div>1<input class="grid-input" type="text" placeholder="输入点什么..."></div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  
+  
+</body>
+</html>

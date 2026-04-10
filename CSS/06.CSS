@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../Poppins-Bold.ttf") format("truetype");
+    font-style: normal;
+}
+
+h1{
+    color: red;
+
+    font-size: 132px;
+
+    font-weight: 700;
+
+    font-family: "Poppins-Bold-Bold";
+
+}
+
+.blue{
+    color: blue;
+
+    font-size: 45px;
+
+    font-weight: 200;
+
+    font-family: "Poppins-Bold";
+}
+
+.green{
+    color: green;
+
+    font-size: 45px;
+
+    font-weight: 700;
+
+    font-family: "Poppins-Bold";
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交叉轴项目对齐方式</title>
+</head>
+
+<style>
+    /* 容器宽度 */
+    .container {
+        width: 300px;
+        height: 200px;
+
+        display: flex;
+
+        /* flex-flow: row nowrap; 默认值 */
+
+        /* 从交叉轴的起始线开始排列,对齐到起始线 */
+        align-items: flex-start;
+        /* 对齐到终止线 */
+        align-items: flex-end;
+        /* 对齐到交叉中间线:居中对齐 */
+        align-items: center;
+    }
+
+
+    .item {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        background-color: lightcyan;
+    }
+</style>
+<body>
+    <!-- .container>.item{$}*4  -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+</body>
+</html>

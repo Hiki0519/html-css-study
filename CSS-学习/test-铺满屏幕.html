@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+ <style>
+ .hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../全模型颜色.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .box{
+    /* height: 100vh; */
+    aspect-ratio: 16 / 9; 
+    /* aspect-ratio: 屏幕照片永远是16/9的形式展示; */
+    width: 100%;
+    background-image: url(../Model.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .hero-inner{
+    /* height: 100vh; */
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    background-image: url(../Model.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+ }
+
+ .card{
+    border-radius: 22px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    /* background-size: contain; */
+    box-shadow: 0 2px 30px -5px rgba(0, 0, 0, 12);
+    /* 0是水平偏移 2是垂直偏移 30是模糊半径 -5是扩散半径(spread 让阴影更收敛和贴合) */
+    /* blur-radius（模糊半径） 越大越“柔、越散”；越小越“硬、边缘清晰”。 */
+ }
+
+ .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+ }
+ </style>
+<body>
+
+    <div class="hero"></div>
+    <div class="box"></div>
+    <div class="hero-inner"></div>
+
+    <div class="grid">
+        <div class="card"><img src="../全模型颜色.png" alt="#"></div>
+        <div class="card"><img src="../Model_1K_00000.png" alt=""></div>
+    </div>
+</body>
+</html>

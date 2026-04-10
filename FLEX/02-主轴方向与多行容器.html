@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置容器主轴方向与多行容器</title>
+</head>
+
+<style>
+    /* 容器宽度 */
+    .container {
+        width: 300px;
+        height: 200px;
+
+        display: flex;
+
+        
+    /* 设置主轴方向:水平 */   ⭐
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* 设置主轴方向:水平 */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* overflow-y:auto 溢出可以自动*/
+
+    /* 设置多行容器 */       ⭐
+    /* 默认单行容器，不许换行显示，项目自动收缩适应容器大小 */
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
+    /* 简化属性 */           ⭐
+    /* flex-flow: 主轴方向 换行显示 */
+
+    }
+
+
+    .item {
+        width: 100px;
+        height: 50px;
+        font-size: 1.5rem;
+        background-color: lightcyan;
+    }
+</style>
+<body>
+    <!-- .container>.item{$}*4  -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+</body>
+</html>
