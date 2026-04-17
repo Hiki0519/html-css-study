@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两周复习26</title>
+</head>
+<body>
+    <h1>form label 强化</h1>
+
+    <form>
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" placeholder="请输入姓名">
+        <br>
+        <label for="phone">电话</label>
+        <input type="tel" id="phone" name="phone" placeholder="请输入电话">
+        <br>
+        性别：
+        <input type="radio" id="male" name="gender" checked>
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">女</label>
+        <br>
+        技能：
+        <input type="checkbox" id="html" name="skill">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skill" checked>
+        <label for="css">CSS</label>
+        <input type="checkbox" id="javascript" name="skill">
+        <label for="javascript">JavaScript</label>
+        <br>
+        <label for="stage">学习阶段</label>
+        <select name="stage" id="stage">
+            <option>入门</option>
+            <option selected="selected">复习</option>
+            <option>进阶</option>
+        </select>
+        <br>
+        <label for="message">留言</label>
+        <br>
+        <textarea name="message" id="message" placeholder="请输入学习留言"></textarea>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
