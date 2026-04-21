@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两周复习30</title>
+</head>
+<body>
+    <header>
+        <h1>HTML 综合检测</h1>
+        <p>这是进入 CSS 前的 HTML 检测</p>
+    </header>
+
+    <nav>
+        <a href="#">首页</a>
+        <a href="#">图片</a>
+        <a href="#">表单</a>
+        <a href="#">表格</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>图片复习</h2>
+            <img src="../../Model.png" alt="model" title="这是model" width="250">
+        </section>
+
+        <section>
+            <h2>表单复习</h2>            
+            <form>
+            <label for="username">用户名：</label>
+            <input type="text" id="username" name="username" placeholder="请输入用户名">
+            <br>
+            性别：
+            <input type="radio" id="male" name="gender" checked>
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">女</label>
+            <br>
+            <label for="city">城市：</label>
+            <select name="city" id="city">
+                <option>北京</option>
+                <option selected="selected">上海</option>
+                <option>广州</option>
+            </select>
+            <br>
+            <label for="message">留言：</label>
+            <textarea name="message" id="message" placeholder="请输入留言"></textarea>
+            <br>
+            <button type="submit">提交</button>
+            <button type="reset">重置</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>表格复习</h2>
+            <table border="1" cellspacing="0">
+                <caption>表格复习</caption>
+
+                <thead>
+                    <tr>
+                        <th>知识点</th>
+                        <th>类型</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>img</td>
+                        <td>图片</td>
+                        <td>已复习</td>
+                    </tr>
+
+                    <tr>
+                        <td>form</td>
+                        <td>表单</td>
+                        <td>已复习</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">HTML基础复习完成</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <article>
+            <h3>学习总结</h3>
+            <p>我正在巩固 HTML 基础。</p>
+        </article>
+
+        <aside>
+            <h3>补充说明</h3>
+            <p>如果这次完成稳定，就可以开始学习 CSS。</p>
+        </aside>
+
+        <footer>这是 HTML 综合检测页面</footer>
+    </main>
+</body>
+</html>
