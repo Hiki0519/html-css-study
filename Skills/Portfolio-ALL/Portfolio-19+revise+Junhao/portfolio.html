@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-19+revise+Junhao / 作品集 / 中文产品视觉系统</title>
+    <meta name="version-note" content="19+revise+Junhao / 中文产品视觉系统" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="main-nav" aria-label="主导航">
+        <a class="is-active" href="portfolio.html" data-word="作品集">作品集</a>
+        <a href="resume.html" data-word="个人简历">个人简历</a>
+        <a href="logic.html" data-word="能力逻辑树">能力逻辑树</a>
+        <a href="contact.html" data-word="联系方式">联系方式</a>
+      </nav>
+    </header>
+
+    <main class="page-main portfolio-page">
+      <section class="content-section page-section portfolio-intro section-panel" data-section="作品集">
+        <div class="section-head">
+          <p class="eyebrow">01 / 作品集</p>
+          <h2>作品集</h2>
+        </div>
+        <div class="portfolio-brief">
+          <p>
+            作品内容分为产品渲染视觉与动态视频研究。两个区域保持独立，让每个案例都能以合适的节奏被阅读。
+          </p>
+          <div class="portfolio-switch" aria-label="作品集区域">
+            <a href="#render-area">渲染区域</a>
+            <a href="#video-area">视频区域</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section render-section section-panel" id="render-area" data-section="作品集">
+        <div class="section-head">
+          <p class="eyebrow">01A / 渲染区域</p>
+          <h2>渲染区域</h2>
+        </div>
+        <article class="work-feature render-feature">
+          <img src="assets/lineup-product.png" alt="四种产品配色并列展示" />
+          <div class="work-copy">
+            <p class="index">精选渲染案例</p>
+            <h3>Ating Bar CMF 视觉系统</h3>
+            <p>
+              围绕金属质感、侧面结构、小型显示细节与产品配色系列建立的发布级视觉系统。
+            </p>
+          </div>
+        </article>
+        <div class="work-grid render-grid">
+          <article>
+            <span>01</span>
+            <h3>主视觉</h3>
+            <p>结合产品轮廓、背景字体与留白比例的首屏视觉构成。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>CMF 叙事</h3>
+            <p>围绕黑、蓝、银、金四种表面处理建立材质与视觉对比系统。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>细节渲染</h3>
+            <p>呈现按键、显示屏、倒角与侧边结构等局部产品细节。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section video-section section-panel" id="video-area" data-section="作品集">
+        <div class="section-head">
+          <p class="eyebrow">01B / 视频区域</p>
+          <h2>视频区域</h2>
+        </div>
+        <div class="video-layout">
+          <div class="video-gallery-head">
+            <p>
+              四个动态研究以独立视频模块呈现，让渲染作品与视频作品在作品集中保持清晰分区。
+            </p>
+          </div>
+          <div class="video-grid video-gallery">
+            <article>
+              <video class="video-card-media" controls preload="metadata" playsinline poster="assets/videos/posters/AO24-06-0.png">
+                <source src="assets/videos/AO24.mp4" type="video/mp4" />
+              </video>
+              <span class="video-label">01 / AO24</span>
+              <h3>AO24 动态研究</h3>
+              <p>用于呈现表面节奏、灯光变化与干净展示节拍的产品动态序列。</p>
+            </article>
+            <article>
+              <video class="video-card-media" controls preload="metadata" playsinline poster="assets/videos/posters/BO24-07-0.png">
+                <source src="assets/videos/BO24.mp4" type="video/mp4" />
+              </video>
+              <span class="video-label">02 / BO24</span>
+              <h3>BO24 动态研究</h3>
+              <p>面向产品流动、视觉转场、材质对比与发布页使用场景的视频模块。</p>
+            </article>
+            <article>
+              <video class="video-card-media" controls preload="metadata" playsinline poster="assets/videos/posters/BP10-08-0.png">
+                <source src="assets/videos/BP10.mp4" type="video/mp4" />
+              </video>
+              <span class="video-label">03 / BP10</span>
+              <h3>BP10 动态研究</h3>
+              <p>用于硬件细节、动态清晰度与作品集评审场景的短视频呈现。</p>
+            </article>
+            <article>
+              <video class="video-card-media" controls preload="metadata" playsinline>
+                <source src="assets/videos/AT04-4K.mp4" type="video/mp4" />
+              </video>
+              <span class="video-label">04 / AT04</span>
+              <h3>AT04 动态研究</h3>
+              <p>新增 4K 视频模块，用于补充产品动态、光影节奏与发布级视觉呈现。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
